@@ -1,7 +1,20 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
+// import { AppModule } from './app/app.module';
 
+// platformBrowserDynamic()
+//   .bootstrapModule(AppModule)
+//   .catch((err) => console.error(err));
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+class Point {
+  x: any;
+  y: any;
+
+  draw() {
+    console.log('X:' + this.x + ', Y: ' + this.y);
+  }
+}
+let point = new Point();
+point.x = 1;
+point.y = 2;
+point.draw();
